@@ -35,7 +35,7 @@ def calcAverageTime(resTime):
 # Подсчет времени выполнения функции для каждой из 100 итераций
 def calcTime(array):
 
-    output_res_arr = []
+    output_res_arr = ''
     for i in range(0, 100):
         #########__Расчет времени__##########
         startTime = time.time()
@@ -44,15 +44,14 @@ def calcTime(array):
         #########__Добавлне времени в массив__##########
         RES_TIME_ARR.append(endTime - startTime)
         ########__Заполнение массива для единовременного вывода__###########
-        output_res ='i = ', i + 1, ', Время выполнения = ', RES_TIME_ARR[i], '\n'
-        output_res_arr.append(output_res)
+        output_res =f'i =  {i + 1}  Время выполнения =  {RES_TIME_ARR[i]} \n'
+        output_res_arr = output_res_arr + output_res
         ###################
 
     avg = calcAverageTime(RES_TIME_ARR)
     min, max = calcMinMaxTime(RES_TIME_ARR)
     ########Блок вывода в консоль###########
-    for res in output_res_arr:
-        print(res)
+    print(output_res_arr)
     print('Максимальное время работы: ', max, '\n')
     print('Среднее время работы: ', avg, '\n')
     print('Минимальное время работы: ', min, '\n')

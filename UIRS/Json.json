@@ -1,0 +1,94 @@
+{
+    "newsFeed": {
+        "hits": [
+            {
+                "_id": "2440998_art",
+                "_source": {
+                    "id": 2440998,
+                    "link_title": "\u0423\u043a\u0440\u0430\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u043e\u043d\u0441\u0443\u043b \u0432 \u041c\u0438\u043b\u0430\u043d\u0435 \u043f\u044b\u0442\u0430\u043b\u0441\u044f \u0441\u043e\u0440\u0432\u0430\u0442\u044c \u043d\u043e\u0432\u044b\u0439 \u0441\u0435\u0437\u043e\u043d \u0432 \"\u041b\u0430 \u0421\u043a\u0430\u043b\u0430\" \u0438\u0437-\u0437\u0430 \u043e\u043f\u0435\u0440\u044b \u041c\u0443\u0441\u043e\u0440\u0433\u0441\u043a\u043e\u0433\u043e",
+                    "url": "/2022/11/22/ukrainskij-konsul-v-milane-pytalsia-sorvat-novyj-sezon-v-la-skala-iz-za-opery-musorgskogo.html",
+                    "is_news": true,
+                    "is_opinion": false,
+                    "publish_at": 1669140003
+                },
+                "sort": [
+                    1669140003
+                ]
+            },
+            {
+                "_id": "2440997_art",
+                "_source": {
+                    "id": 2440997,
+                    "link_title": "\u0412 \u041e\u041e\u041d \u0432\u044b\u0440\u0430\u0437\u0438\u043b\u0438 \u043e\u0431\u0435\u0441\u043f\u043e\u043a\u043e\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0432\u0438\u0434\u0435\u043e\u043a\u0430\u0434\u0440\u0430\u043c\u0438 \u0441 \u0440\u0430\u0441\u043f\u0440\u0430\u0432\u043e\u0439 \u043d\u0430\u0434 \u0440\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u043c\u0438 \u043f\u043b\u0435\u043d\u043d\u044b\u043c\u0438 \u0432 \u0414\u043e\u043d\u0431\u0430\u0441\u0441\u0435",
+                    "url": "/2022/11/22/v-oon-vyrazili-obespokoennost-videokadrami-s-raspravoj-nad-rossijskimi-plennymi-v-donbasse.html",
+                    "is_news": true,
+                    "is_opinion": false,
+                    "publish_at": 1669139522
+                },
+                "sort": [
+                    1669139522
+                ]
+            },
+            {
+                "_id": "2440993_art",
+                "_source": {
+                    "id": 2440993,
+                    "link_title": "\u0411\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0438\u0435 \u0436\u0435\u043b\u0435\u0437\u043d\u043e\u0434\u043e\u0440\u043e\u0436\u043d\u0438\u043a\u0438 \u043e\u0431\u044a\u044f\u0432\u0438\u043b\u0438 \u0437\u0430\u0431\u0430\u0441\u0442\u043e\u0432\u043a\u0443 \u043d\u0430 \u043d\u043e\u0432\u043e\u0433\u043e\u0434\u043d\u0438\u0435 \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u043a\u0438",
+                    "url": "/2022/11/22/britanskie-zheleznodorozhniki-obiavili-zabastovku-na-novogodnie-prazdniki.html",
+                    "is_news": true,
+                    "is_opinion": false,
+                    "publish_at": 1669138681
+                },
+                "sort": [
+                    1669138681
+                ]
+            },
+            {
+                "_id": "2440991_art",
+                "_source": {
+                    "id": 2440991,
+                    "link_title": "\u0412 \u0421\u041f\u0427 \u043f\u0440\u043e\u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043b\u0438 \u043e\u0431\u044b\u0441\u043a\u0438 \u0432 \u041a\u0438\u0435\u0432\u043e-\u041f\u0435\u0447\u0435\u0440\u0441\u043a\u043e\u0439 \u043b\u0430\u0432\u0440\u0435",
+                    "url": "/2022/11/22/v-spch-prokommentirovali-obyski-v-kievo-pecherskoj-lavre.html",
+                    "is_news": true,
+                    "is_opinion": false,
+                    "publish_at": 1669138442
+                },
+                "sort": [
+                    1669138442
+                ]
+            },
+            {
+                "_id": "2440989_art",
+                "_source": {
+                    "id": 2440989,
+                    "link_title": "\u0417\u0430\u043f\u0430\u0441\u043e\u0432 \u0433\u0430\u0437\u0430 \u0432 \u0413\u0435\u0440\u043c\u0430\u043d\u0438\u0438 \u0445\u0432\u0430\u0442\u0438\u0442 \u043d\u0430 \u0434\u0435\u0441\u044f\u0442\u044c \u043d\u0435\u0434\u0435\u043b\u044c",
+                    "url": "/2022/11/22/zapasov-gaza-v-germanii-hvatit-na-desiat-nedel.html",
+                    "is_news": true,
+                    "is_opinion": false,
+                    "publish_at": 1669138267
+                },
+                "sort": [
+                    1669138267
+                ]
+            },
+            {
+                "_id": "2440987_art",
+                "_source": {
+                    "id": 2440987,
+                    "link_title": "WSJ: \u0417\u0430\u043f\u0430\u0434 23 \u043d\u043e\u044f\u0431\u0440\u044f \u043d\u0430\u043c\u0435\u0440\u0435\u043d \u043e\u043a\u043e\u043d\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0441\u043e\u0433\u043b\u0430\u0441\u043e\u0432\u0430\u0442\u044c \u043f\u043e\u0442\u043e\u043b\u043e\u043a \u0446\u0435\u043d \u043d\u0430 \u043d\u0435\u0444\u0442\u044c \u0438\u0437 \u0420\u043e\u0441\u0441\u0438\u0438 \u043d\u0430 \u0443\u0440\u043e\u0432\u043d\u0435 60-70 \u0434\u043e\u043b\u043b\u0430\u0440\u043e\u0432",
+                    "url": "/2022/11/22/wsj-zapad-23-noiabria-nameren-okonchatelno-soglasovat-potolok-cen-na-neft-iz-rossii-na-urovne-60-70-dollarov.html",
+                    "is_news": true,
+                    "is_opinion": false,
+                    "publish_at": 1669138088
+                },
+                "sort": [
+                    1669138088
+                ]
+            }
+        ],
+        "priority": 8,
+        "total": {
+            "value": 110533
+        }
+    }
+}

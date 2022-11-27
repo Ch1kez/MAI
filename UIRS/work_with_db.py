@@ -21,7 +21,7 @@ class DataBaseWork:
                         user_name TEXT,
                         rgru_received BOOLEAN,
                         primeru_received BOOLEAN,
-                        vedomosti_received BOOLEAN
+                        lenta_received BOOLEAN
                     );
                 """)
 
@@ -109,12 +109,14 @@ class DataBaseWork:
             update = self.connector.execute(f"UPDATE users SET {sourse_name} = ?", (bool_value,))
 
     # Проверка на факт получения новости пользователем с конкретного источника
-    def is_user_received_current_news(self, user_id, soure_name):
-        data = self.connector.execute(f"SELECT {soure_name} FROM users WHERE user_id = '{user_id}'")
-        return data.fetchone()[0]
+    def is_user_received_current_news(self, user_id, sourse_name):
+        with self.connector:
+            data = self.connector.execute(f"SELECT {sourse_name} FROM users WHERE user_id = '{user_id}'")
+            data = bool(data.fetchone()[0])
+        return data
 
-if __name__ == "__main__":
-    db = DataBaseWork()
-    db.create_db()
-
-    print(db.is_user_received_current_news(817688918, 'primeru_received'))
+# if __name__ == "__main__":
+#     db = DataBaseWork()
+#     db.create_db()
+#
+#     print(db.is_user_received_current_news(817688918, 'primeru_received'))

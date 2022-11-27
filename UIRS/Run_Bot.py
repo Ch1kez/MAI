@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 from RgRu import main_RgRu
 from PrimeRu import main_PrimeRu
-from VedomostiRu import main_VedomostiRu
+from LentaRu import main_LentaRu
 import config
 import work_with_db
 
@@ -18,10 +18,10 @@ async def mess():
         checking_for_new_news()
 
 @dp.message_handler(commands="start")
-async def start_command(message: types.Message,):
+async def start_command(message: types.Message):
     kbd_btn = [[types.KeyboardButton(text='Rg.ru')],
                [types.KeyboardButton(text='Prime.ru')],
-               [types.KeyboardButton(text='Vedomosti.ru')]]
+               [types.KeyboardButton(text='Lenta.ru')]]
 
     keyboard = types.ReplyKeyboardMarkup(
         keyboard=kbd_btn,
@@ -34,7 +34,7 @@ async def start_command(message: types.Message,):
     await message.answer("Выберите источник, с которого вы хотите получить новость!",
                          reply_markup=keyboard)
 
-@dp.message_handler(content_types=['text'])
+@dp.message_handler()
 async def buttons_is_pressed(message: types.Message):
     sourse_name = ''
 
@@ -44,8 +44,8 @@ async def buttons_is_pressed(message: types.Message):
     elif message.text == 'Prime.ru':
         sourse_name = ['PrimeRu', 'primeru_received']
 
-    elif message.text == 'Vedomosti.ru':
-        sourse_name = ['VedomostiRu', 'vedomosti_received']
+    elif message.text == 'Lenta.ru':
+        sourse_name = ['LentaRu', 'lenta_received']
 
     else:
         await message.answer('Я не понимаю Вас!')
@@ -68,6 +68,7 @@ def check_for_exists_news_in_db(name, header, date, link):
     elif buff == 1: # В бд есть старая новость от этого источника
         db.delete_news_from_news_table(name)
         db.add_news_in_news_table(name, header, date, link)
+        print(f'Появилась новая запись из {name}!')
         return True
 
     elif buff == 2: # В бд нет новостей от этого источника
@@ -80,15 +81,15 @@ def checking_for_new_news():
     if check == True:
         db.update_received_news_for_all_users('rgru_received', False)
 
-    [name, header, date, link, chat_id] = main_PrimeRu(0)
+    [name, header, date, link] = main_PrimeRu()
     check = check_for_exists_news_in_db(name, header, date, link)
     if check == True:
         db.update_received_news_for_all_users('primeru_received', False)
 
-    [name, header, date, link, chat_id] = main_VedomostiRu(0)
+    [name, header, date, link] = main_LentaRu()
     check = check_for_exists_news_in_db(name, header, date, link)
     if check == True:
-        db.update_received_news_for_all_users('vedomosti_received', False)
+        db.update_received_news_for_all_users('lenta_received', False)
 
 def launching_db():
     db.create_db()

@@ -2,10 +2,16 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 #--------------------------------------------------------------------------------------------
 
-meto = [[KeyboardButton(text='Арбатская')],
+begin = [[KeyboardButton(text='Да')],[KeyboardButton(text='Данила пидор')]]
+
+begin_buttons = ReplyKeyboardMarkup(keyboard = begin, resize_keyboard = True)
+
+#--------------------------------------------------------------------------------------------
+
+metro = [[KeyboardButton(text='Арбатская')],
         [KeyboardButton(text='Театральная')],
         [KeyboardButton(text='Тверская')]]
-metro_buttons = ReplyKeyboardMarkup(keyboard = meto, resize_keyboard = True)
+metro_buttons = ReplyKeyboardMarkup(keyboard = metro, resize_keyboard = True)
 
 #--------------------------------------------------------------------------------------------
 
@@ -23,6 +29,18 @@ price_buttons = ReplyKeyboardMarkup(keyboard = price, resize_keyboard = True)
 
 #--------------------------------------------------------------------------------------------
 
-expansion = [[KeyboardButton(text='👍🏻')],
+smile = [[KeyboardButton(text='👍🏻')],
          [KeyboardButton(text='👎🏻')]]
-expansion_buttons = ReplyKeyboardMarkup(keyboard = expansion, resize_keyboard = True)
+smile_buttons = ReplyKeyboardMarkup(keyboard = smile, resize_keyboard = True)
+
+#--------------------------------------------------------------------------------------------
+
+yes_or_no = [[KeyboardButton(text='Да')],
+             [KeyboardButton(text='Нет')]]
+yes_or_no_buttons = ReplyKeyboardMarkup(keyboard = yes_or_no, resize_keyboard = True, one_time_keyboard=True)
+
+#--------------------------------------------------------------------------------------------
+
+# skip_buttons = ReplyKeyboardMarkup(one_time_keyboard=False)
+
+#--------------------------------------------------------------------------------------------
